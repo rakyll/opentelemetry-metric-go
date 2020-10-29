@@ -7,7 +7,7 @@ import (
 	metric "github.com/rakyll/opentelemetry-metric-go"
 )
 
-func Example_newFloat64Counter() {
+func Example_asInt64() {
 	ctx := context.Background()
 
 	var meter metric.Meter // ... get it from global provider
