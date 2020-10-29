@@ -45,13 +45,13 @@ func (m Int64Meter) NewUpDownCounter(name string, options ...InstrumentOption) (
 func (m Int64Meter) NewSumObserver(name string, fn sum.Int64ObserverFunc, options ...InstrumentOption) (sum.Int64SumObserver, error) {
 }
 
-func (m Int64Meter) NewValueRecorder(name string, options ...InstrumentOption) (sum.Float64SumObserver, error) {
+func (m Int64Meter) NewValueRecorder(name string, options ...InstrumentOption) (value.Int64Recorder, error) {
 }
 
-func (m Int64Meter) NewValueObserver(name string, options ...InstrumentOption) (sum.Int64SumObserver, error) {
+func (m Int64Meter) NewValueObserver(name string, options ...InstrumentOption) (value.Int64Observer, error) {
 }
 
-func (m Meter) RecordBatch(ctx context.Context, ls []label.KeyValue, ms ...Measurement) {}
+func (m Meter) RecordBatch(ctx context.Context, labels []label.KeyValue, ms ...Measurement) {}
 
 type BatchObserverResult = metric.BatchObserverResult
 
