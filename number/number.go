@@ -1,3 +1,4 @@
+// Package number contains a number type.
 package number
 
 import (

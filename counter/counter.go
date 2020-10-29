@@ -1,3 +1,4 @@
+// Package counter contains counters.
 package counter
 
 type Int64Counter struct{}

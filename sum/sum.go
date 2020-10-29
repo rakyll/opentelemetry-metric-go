@@ -1,3 +1,4 @@
+// Package sum contains sum aggregations.
 package sum
 
 type Int64SumObserver {}
