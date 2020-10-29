@@ -11,9 +11,9 @@ func Example_newFloat64Counter() {
 	ctx := context.Background()
 
 	var meter metric.Meter // ... get it from global provider
-	counter, err := meter.AsFloat64().NewCounter("latency")
+	counter, err := meter.AsInt64().NewCounter("transactions")
 	if err != nil {
 		log.Fatal(err)
 	}
-	counter.Add(ctx, 15.0)
+	counter.Add(ctx, 15)
 }
